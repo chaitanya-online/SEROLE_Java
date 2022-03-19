@@ -4,10 +4,10 @@ import java.sql.*;
 
 public class First_Connection {
 	public static void main(String[] args) throws Exception {
-		String url = "jdbc:mysql://localhost:3306/chaitanya";
+		String url = "jdbc:mysql://localhost:3306/chaitanya"; // Chaitanya database name
 		String username = "root";
 		String query = "select Employee_Name from serole where id=2  ;";
-		String password = "Admin";
+		String password = "Admin"; // Password of Mysql db
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con = DriverManager.getConnection(url, username, password);
 		Statement st = con.createStatement();
